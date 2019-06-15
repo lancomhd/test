@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h3= title
+  form(method='POST' action='/')
+    label(for='company') Company:
+    br
+    input(type='text', name='company')
+    br
+    label(for='url') URL:
+    br
+    input(type='text', name='url')
+    br
+    label(for='public') Public Key:
+    br
+    input(type='text', name='public')
+    br
+    label(for='private') Private Key:
+    br
+    input(type='text', name='private')
+    br
+    button(type='submit') Check
